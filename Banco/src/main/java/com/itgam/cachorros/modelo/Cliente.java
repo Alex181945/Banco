@@ -6,6 +6,8 @@ public class Cliente {
 	private String cNombre;
 	private String cApellidos;
 	private Integer iNumCuenta;
+	private String cUsuario;
+	private String cPassword;
 	
 	public Integer getiIdCliente() {
 		return iIdCliente;
@@ -30,6 +32,18 @@ public class Cliente {
 	}
 	public void setiNumCuenta(Integer iNumCuenta) {
 		this.iNumCuenta = iNumCuenta;
+	}
+	public String getcUsuario() {
+		return cUsuario;
+	}
+	public void setcUsuario(String cUsuario) {
+		this.cUsuario = cUsuario;
+	}
+	public String getcPassword() {
+		return cPassword;
+	}
+	public void setcPassword(String cPassword) {
+		this.cPassword = cPassword;
 	}
 	
 }

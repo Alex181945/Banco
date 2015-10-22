@@ -1,4 +1,4 @@
-package com.itgam.cachorros;
+package com.itgam.cachorros.control;
 
 import java.text.DateFormat;
 import java.util.Date;

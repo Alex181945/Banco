@@ -9,7 +9,11 @@
 <body>
 
 	<table>
-	<tr><td>Usuario</td><td></td></tr>
+	<tr><td>Usuario</td>
+		<td><input type = "text" placeholder = "Ingrese su usuario"></td></tr>
+		
+	<tr><td>Contraseña</td>
+		<td><input type = "password" placeholder = "Ingrese su contraseña"></td></tr>	
 	</table>
 
 </body>

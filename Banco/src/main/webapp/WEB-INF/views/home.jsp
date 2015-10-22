@@ -7,8 +7,7 @@
 	<meta name="author" content="Luka Cvrk (www.solucija.com)" />
 	<meta name="description" content="Description" />
 	<meta name="keywords" content="key, words" />
-	<link href="css/screen.css" media="screen" rel="stylesheet"
-	type="text/css" />
+	<link href="css/screen.css" media="screen" rel="stylesheet"	type="text/css" />
 	<title>Mocosoft</title>
 </head>
 <body>

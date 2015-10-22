@@ -12,34 +12,35 @@
 </head>
 <body>
 	<div id="content">
-		<p id="top">Duis rutrum dapibus diam. Sed turpis sem, suscipit et, ullamcorper vel, aliquam in, tellus.</p>
+		<p id="top">Mocosoft Mexico S.A de C.V</p>
 		<div id="logo">
-			<h1><a href="index.html">distinctive</a></h1>
+			<h1><a href="index.html">Mocosoft</a></h1>
 		</div>
 		<ul id="menu">
-			<li class="current"><a href="#">Home</a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Work</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
+			<li class="current"><a href="#">Inicio</a></li>
+			<li><a href="#">Noticias</a></li>
+			<li><a href="#">Banca en linea</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Nosotros</a></li>
+			<li><a href="#">Contacto</a></li>
 		</ul>
 		<div class="line"></div>
 		<div id="pitch">
-			<h1>We provide turnkey, high-quality<br />solutions regardless of the project size.</h1>
-			<h2>We're a professional, full service web development company that creates elegant website designs and build innovative web applications.</h2>
+			<h1>Grupo Financiero Mocosoft<br />Soluciones reales para problemas reales</h1>
+			<h2>Somos un grupo de profesionales a los que nos interesa le bienestar
+			economico de las personas.</h2>
 		</div>	
 		<div class="third">
-			<h3>Consulting and Planning</h3>
-			<p>An effective website requires a clear definition of goals, comprehensive planning, and expert execution. For sites that have not yet been built or are ready to undergo a transformation, we can provide information on architecture planning. Contact us for a free consultation.</p>
+			<h3>¿Planeas un viaje?</h3>
+			<p>Si por lo unico que deseas preocuparte es porque se te olvido el bloqueador, ven y acude con alguno de nuestros ejecutivos.</p>
 		</div>
 		<div class="third">
-			<h3>Architecture and Design</h3>
-			<p>While constantly communicating with the client, we organize all aspects of the project to set paths for further design and development process. We create smart and usable interfaces with a strong accent on accessibility and semantically correct markup.</p>
+			<h3>Construye tu patrimonio hoy mismo</h3>
+			<p>Porque creemos que todo ciudadano merece tener su propia casa, acude a tu sucursal mas cercana donde se te ofrecera atencion oportuna.</p>
 		</div>
 		<div class="third last">
-			<h3>Application Development</h3>
-			<p>Regardless of the project size, we offer robust and sophisticated "out of the box" or custom built solutions. From a typical content management system to specifically targeted web applications, we produce highly usable, modular and search engine optimized solutions.</p>
+			<h3>¿Tienes una idea brillante?</h3>
+			<p>Sin importar el tamaño del proyecto, ofrecemos una robusta y sofisticada  solucion a la medida. A partir de un sistema de gestión de gastos corrientes, producimos soluciones, motor optimizado altamente utilizables, modulares y de búsqueda.</p>
 		</div>
 		<div class="line"></div>
 		<div class="left">
@@ -54,7 +55,7 @@
 			<p>Duis rutrum dapibus diam. Sed turpis sem, suscipit et, ullamcorper vel, aliquam in, tellus. Phasellus interdum. Sed pede. Fusce semper tellus quis sapien.</p>
 		</div>
 		<div id="footer">
-			<p>&copy; Copyright 2009 Distinctive &minus; Design: Luka Cvrk, <a href="http://www.solucija.com" title="Free CSS Templates">Solucija</a></p>
+			<p>&copy; Copyright 2015 Mocosoft Desarrollo Mexico &minus; Design: Luka Cvrk, <a href="http://www.solucija.com" title="Free CSS Templates">Solucija</a></p>
 		</div>	
 	</div>
 </body>

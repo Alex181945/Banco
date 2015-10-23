@@ -1,5 +1,5 @@
 package com.itgam.cachorros.dao;
 
-public class ClienteDao {
+public interface ClienteDao {
 
 }

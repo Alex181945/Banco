@@ -5,7 +5,7 @@ public class Cliente {
 	private Integer iIdCliente;
 	private String cNombre;
 	private String cApellidos;
-	private Integer iNumCuenta;
+	private Integer iId_Cuenta;
 	private String cUsuario;
 	private String cPassword;
 	
@@ -27,11 +27,11 @@ public class Cliente {
 	public void setcApellidos(String cApellidos) {
 		this.cApellidos = cApellidos;
 	}
-	public Integer getiNumCuenta() {
-		return iNumCuenta;
+	public Integer getiId_Cuenta() {
+		return iId_Cuenta;
 	}
-	public void setiNumCuenta(Integer iNumCuenta) {
-		this.iNumCuenta = iNumCuenta;
+	public void setiI_Cuenta(Integer iId_Cuenta) {
+		this.iId_Cuenta = iId_Cuenta;
 	}
 	public String getcUsuario() {
 		return cUsuario;

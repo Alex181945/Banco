@@ -2,20 +2,20 @@ package com.itgam.cachorros.modelo;
 
 public class Cuenta {
 
-	private Integer id_Cuenta;
-	private Integer isaldo;
+	private Integer iIdCuenta;
+	private Integer iSaldo;
 	
-	public Integer getId_Cuenta() {
-		return id_Cuenta;
+	public Integer getIdCuenta() {
+		return iIdCuenta;
 	}
-	public void setId_Cuenta(Integer id_Cuenta) {
-		this.id_Cuenta = id_Cuenta;
+	public void setIdCuenta(Integer iIdCuenta) {
+		this.iIdCuenta = iIdCuenta;
 	}
 	public Integer getIsaldo() {
-		return isaldo;
+		return iSaldo;
 	}
-	public void setIsaldo(Integer isaldo) {
-		this.isaldo = isaldo;
+	public void setIsaldo(Integer iSaldo) {
+		this.iSaldo = iSaldo;
 	}
 	
 	

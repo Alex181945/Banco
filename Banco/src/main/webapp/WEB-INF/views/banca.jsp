@@ -5,16 +5,40 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Mocosoft</title>
+<link rel="stylesheet" href="resources/css/style.css">
+<link rel="icon" type="image/x-icon" href="resources/images/bank.ico" />
 </head>
 <body>
 
-	<table>
-	<tr><td>Usuario</td>
-		<td><input type = "text" placeholder = "Ingrese su usuario"></td></tr>
-		
-	<tr><td>Contraseña</td>
-		<td><input type = "password" placeholder = "Ingrese su contraseña"></td></tr>	
-	</table>
+<div class="container">
+
+  <div id="login-form">
+
+    <h3>Iniciar Sesión</h3>
+
+    <fieldset>
+
+      <form action="javascript:void(0);" method="get">
+
+        <input type="text" required value="Usuario" onBlur="if(this.value=='')this.value='Usuario'" onFocus="if(this.value=='Usuario')this.value='' "> <!-- JS because of IE support; better: placeholder="Email" -->
+
+        <input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> <!-- JS because of IE support; better: placeholder="Password" -->
+
+        <input type="submit" value="Ingresar">
+
+        <footer class="clearfix">
+
+          <p><span class="info">?</span><a href="http://localhost:8080/cachorros/">¿Olvido su Contraseña?</a></p>
+
+        </footer>
+
+      </form>
+
+    </fieldset>
+
+  </div> <!-- end login-form -->
+
+</div>
 
 </body>
 </html>

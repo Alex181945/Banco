@@ -8,6 +8,7 @@
 	<meta name="description" content="Description" />
 	<meta name="keywords" content="key, words" />
 	<link href="resources/css/screen.css" media="screen" rel="stylesheet"	type="text/css" />
+	<link rel="icon" type="image/x-icon" href="resources/images/bank.ico" />
 	<title>Mocosoft</title>
 </head>
 <body>

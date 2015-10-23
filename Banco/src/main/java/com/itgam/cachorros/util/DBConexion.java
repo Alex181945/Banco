@@ -1,5 +1,5 @@
 package com.itgam.cachorros.util;
 
-public class mary {
+public class DBConexion {
 
 }

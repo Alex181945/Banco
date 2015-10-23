@@ -14,10 +14,10 @@
 	<div id="content">
 		<p id="top">Mocosoft Mexico S.A de C.V</p>
 		<div id="logo">
-			<h1><a href="index.html">Mocosoft</a></h1>
+			<h1><a href="http://localhost:8080/cachorros/">Mocosoft</a></h1>
 		</div>
 		<ul id="menu">
-			<li class="current"><a href="#">Inicio</a></li>
+			<li class="current"><a href="http://localhost:8080/cachorros/">Inicio</a></li>
 			<li><a href="#">Noticias</a></li>
 			<li><a href="bancaenlinea">Banca en linea</a></li>
 			<li><a href="#">Servicios</a></li>

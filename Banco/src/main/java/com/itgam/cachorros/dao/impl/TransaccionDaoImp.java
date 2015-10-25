@@ -24,21 +24,22 @@ public class TransaccionDaoImp implements TransaccionDao {
 		
 		Statement consulta = inicio.createStatement();
 		
-		ResultSet res = consulta.executeQuery("SELECT * FROM transacciones WHERE iIdCuenta = "+iIdCuenta);
-		List<Transaccion> obj2 = new ArrayList<Transaccion>();
+		ResultSet res = consulta.executeQuery("SELECT * FROM Transacciones WHERE iIdCuenta = "+iIdCuenta);
+		List<Transaccion> obj = new ArrayList<Transaccion>();
         while (res.next()) {
         	Transaccion obj_Transaccion = new Transaccion();
         	
-        	obj_Transaccion.setNumTransaccion(res.getInt("Num_Transaccion"));
+        	obj_Transaccion.setNumTransaccion(res.getInt("NumTransaccion"));
         	obj_Transaccion.setiIdCuenta(res.getInt("iIdCuenta"));
-        	obj_Transaccion.setTipoTransa(res.getString("Tipo_Transa"));
+        	obj_Transaccion.setTipoTransa(res.getString("TipoTransa"));
         	obj_Transaccion.setMonto(res.getInt("Monto"));
-        	obj_Transaccion.setFechaTransa(res.getString("Fecha_Transa"));
+        	obj_Transaccion.setFechaTransa(res.getString("FechaTransa"));
         	
-        	obj2.add(obj_Transaccion);
+        	obj.add(obj_Transaccion);
         }
         inicio.close();
-        return obj2;
+        System.out.println("Salgo del dao");
+        return obj;
 	}
 
 }

@@ -57,9 +57,9 @@
 						<td></td>
 						<td><c:out value="${Transaccion.NumTransaccion}" /></td>
 						<td><c:out value="${Transaccion.iIdCuenta}" /></td>
-						<td><c:out value="${Transaccion.Tipo_Transa}" /></td>
+						<td><c:out value="${Transaccion.TipoTransa}" /></td>
 						<td><c:out value="${Transaccion.Monto}" /></td>
-						<td><c:out value="${Transaccion.Fecha_Transa}" /></td>
+						<td><c:out value="${Transaccion.FechaTransa}" /></td>
 					</tr>
 				</c:forEach>
     </tbody>

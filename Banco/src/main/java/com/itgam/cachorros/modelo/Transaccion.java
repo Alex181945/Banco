@@ -38,6 +38,5 @@ public class Transaccion {
 	public void setFechaTransa(String fechaTransa) {
 		FechaTransa = fechaTransa;
 	}
-	
-	
+
 }

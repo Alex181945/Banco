@@ -1,5 +1,7 @@
 package com.itgam.cachorros.service.impl;
 
+import java.sql.SQLException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,5 +25,9 @@ public class ClienteServiceImp implements ClienteService {
 	
 	public void delete_Cliente(Integer id){
 		this.clienteDao.delete_Cliente(id);
+	}
+	
+	public String acceso(Cliente obj) throws SQLException{
+		return this.clienteDao.acceso(obj);
 	}
 }

@@ -1,5 +1,6 @@
 package com.itgam.cachorros.control;
 
+import java.sql.SQLException;
 import java.util.Locale;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,14 +38,17 @@ public class InicioController {
 	}
 	
 	@RequestMapping(value = "/bancaenlinea/login", method = RequestMethod.POST)
-	public String bancaPost(@ModelAttribute("cliente") Cliente obj) {
+	public String bancaPost(@ModelAttribute("cliente") Cliente obj) throws SQLException {
 		System.out.println("Entra al post");
-		System.out.println(obj.getcUsuario());
-		System.out.println(obj.getcPassword());
 		
-		this.clienteService.add_Cliente(obj);
-		
-		return "operacion";
+		String resultado = this.clienteService.acceso(obj);
+		System.out.println(resultado);
+		if(resultado.equals("Existe")){
+			return "operacion";
+		}
+		else{
+			return "redirect:/bancaenlinea";
+		}
 	}
 	
 }

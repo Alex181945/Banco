@@ -23,14 +23,16 @@
 
       <form action="bancaenlinea/login" method="post" >
       
+      	
       	<input name="cUsuario" type="text" required value="Usuario" onBlur="if(this.value=='')this.value='Usuario'" onFocus="if(this.value=='Usuario')this.value=''">
       	<input name="cPassword" type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value=''">
         
         <input type="submit" value="Ingresar">
+        
 
         <footer class="clearfix">
 
-          <p><span class="info">?</span><a href="http://localhost:8080/cachorros/">¿Olvido su Contraseña?</a></p>
+          <p><span class="info">?</span><a href="http://localhost:8080/cachorros/">Registrate aquí</a></p>
 
         </footer>
 
@@ -41,6 +43,5 @@
   </div> <!-- end login-form -->
 
 </div>
-
 </body>
 </html>

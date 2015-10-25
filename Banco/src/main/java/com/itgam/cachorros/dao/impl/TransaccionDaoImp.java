@@ -31,9 +31,9 @@ public class TransaccionDaoImp implements TransaccionDao {
         	
         	obj_Transaccion.setNumTransaccion(res.getInt("Num_Transaccion"));
         	obj_Transaccion.setiIdCuenta(res.getInt("iIdCuenta"));
-        	obj_Transaccion.setTipo_Transa(res.getString("Tipo_Transa"));
+        	obj_Transaccion.setTipoTransa(res.getString("Tipo_Transa"));
         	obj_Transaccion.setMonto(res.getInt("Monto"));
-        	obj_Transaccion.setFecha_Transa(res.getDate("Fecha_Transa").toString());
+        	obj_Transaccion.setFechaTransa(res.getString("Fecha_Transa"));
         	
         	obj2.add(obj_Transaccion);
         }

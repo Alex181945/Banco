@@ -4,9 +4,9 @@ public class Transaccion {
 	
 	private Integer NumTransaccion;
 	private Integer iIdCuenta;
-	private String Tipo_Transa;
+	private String TipoTransa;
 	private Integer Monto;
-	private String Fecha_Transa;
+	private String FechaTransa;
 	
 	public Integer getNumTransaccion() {
 		return NumTransaccion;
@@ -20,11 +20,11 @@ public class Transaccion {
 	public void setiIdCuenta(Integer iIdCuenta) {
 		this.iIdCuenta = iIdCuenta;
 	}
-	public String getTipo_Transa() {
-		return Tipo_Transa;
+	public String getTipoTransa() {
+		return TipoTransa;
 	}
-	public void setTipo_Transa(String tipo_Transa) {
-		Tipo_Transa = tipo_Transa;
+	public void setTipoTransa(String tipoTransa) {
+		TipoTransa = tipoTransa;
 	}
 	public Integer getMonto() {
 		return Monto;
@@ -32,11 +32,12 @@ public class Transaccion {
 	public void setMonto(Integer monto) {
 		Monto = monto;
 	}
-	public String getFecha_Transa() {
-		return Fecha_Transa;
+	public String getFechaTransa() {
+		return FechaTransa;
 	}
-	public void setFecha_Transa(String fecha_Transa) {
-		Fecha_Transa = fecha_Transa;
+	public void setFechaTransa(String fechaTransa) {
+		FechaTransa = fechaTransa;
 	}
+	
 	
 }

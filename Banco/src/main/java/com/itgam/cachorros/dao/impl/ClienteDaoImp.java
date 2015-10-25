@@ -9,6 +9,7 @@ import com.itgam.cachorros.modelo.Cliente;
 public class ClienteDaoImp implements ClienteDao {
 
 	public void add_Cliente(Cliente obj){
+		System.out.println("Llego hasta el dao");
 		
 	}
 	

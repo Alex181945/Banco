@@ -1,5 +1,6 @@
 package com.itgam.cachorros.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.itgam.cachorros.dao.ClienteDao;
@@ -9,17 +10,18 @@ import com.itgam.cachorros.service.ClienteService;
 @Service
 public class ClienteServiceImp implements ClienteService {
 	
+	@Autowired
 	private ClienteDao clienteDao;
 
 	public void add_Cliente(Cliente obj){
-		clienteDao.add_Cliente(obj);
+		this.clienteDao.add_Cliente(obj);
 	}
 	
 	public void update_Cliente(Cliente obj){
-		clienteDao.update_Cliente(obj);
+		this.clienteDao.update_Cliente(obj);
 	}
 	
 	public void delete_Cliente(Integer id){
-		clienteDao.delete_Cliente(id);
+		this.clienteDao.delete_Cliente(id);
 	}
 }

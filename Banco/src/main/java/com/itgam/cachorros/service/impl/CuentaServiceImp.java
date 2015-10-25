@@ -7,7 +7,7 @@ import com.itgam.cachorros.modelo.Cuenta;
 import com.itgam.cachorros.service.CuentaService;
 
 @Service
-public class CuentaServiceImpl implements CuentaService {
+public class CuentaServiceImp implements CuentaService {
 	
 	private CuentaDao cuentaDao;
 	

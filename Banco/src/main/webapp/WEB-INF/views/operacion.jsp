@@ -3,68 +3,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Panelo - Free Admin Template</title>
-<link rel="stylesheet" type="text/css" href="resources/css/style1.css" />
+<title>Mocosoft</title>
+<link href='<c:url value="/resources/css/style1.css"/>' rel="stylesheet" type="text/css"  />
 <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
-<!-- jQuery file -->
-<script src="resources/js/jquery.min.js"></script>
-<script src="resources/js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
 
-</script>
 </head>
 <body>
 <div id="panelwrap">
   	
 	<div class="header">
-    <div class="title"><a href="#">Panelo Admin</a></div>
+    <div class="title"><a href="#">Administra tu cuenta</a></div>
     
-    <div class="header_right">Welcome Admin, <a href="#" class="settings">Settings</a> <a href="#" class="logout">Logout</a> </div>
+    <div class="header_right">Welcome: , <a href="#" class="settings">Configuracion</a> <a href="#" class="logout">Cerrar Sesion</a> </div>
     
     <div class="menu">
     <ul>
-    <li><a href="#" class="selected">Main page</a></li>
-    <li><a href="#">Settings</a></li>
-    <li><a href="#">Add a category</a></li>
-    <li><a href="#">Edit categories</a></li>
-    <li><a href="#">Categories</a></li>
-    <li><a href="#">Options</a></li>
-    <li><a href="#">Admin settings</a></li>
-    <li><a href="#">Help</a></li>
+    <li><a href="#" class="selected">Inicio</a></li>
+    <li><a href="#">Configuracion</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Operaciones</a></li>
+    <li><a href="#">Ayuda</a></li>
     </ul>
     </div>
     
-    </div>
-    
-    <div class="submenu">
-    <ul>
-    <li><a href="#" class="selected">settings</a></li>
-    <li><a href="#">users</a></li>
-    <li><a href="#">categories</a></li>
-    <li><a href="#">edit section</a></li>
-    <li><a href="#">templates</a></li>
-    </ul>
-    </div>          
+           
                     
     <div class="center_content">  
  
     <div id="right_wrap">
     <div id="right_content">             
-    <h2>Tables section</h2> 
+    <h2>Ultimas Operaciones</h2> 
                     
                     
 <table id="rounded-corner">
     <thead>
     	<tr>
         	<th></th>
-            <th>Product</th>
-            <th>Details</th>
-            <th>Price</th>
-            <th>Date</th>
-            <th>Category</th>
-            <th>User</th>
-            <th>Edit</th>
-            <th>Delete</th>
+            <th>Numero de Transaccion</th>
+            <th>Numero de Cuenta</th>
+            <th>Transaccion</th>
+            <th>Monto</th>
+            <th>Fecha</th>
         </tr>
     </thead>
         <tfoot>
@@ -80,9 +59,6 @@
             <td>45$</td>
             <td>10/04/2011</td>
             <td>web design</td>
-            <td>Alex</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
         </tr>
     	<tr class="even">
         	<td><input type="checkbox" name="" /></td>
@@ -91,9 +67,7 @@
             <td>155$</td>
             <td>12/04/2011</td>
             <td>web design</td>
-            <td>Carrina</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+            
         </tr>
     	<tr class="odd">
         	<td><input type="checkbox" name="" /></td>
@@ -102,9 +76,7 @@
             <td>45$</td>
             <td>10/04/2011</td>
             <td>web design</td>
-            <td>Alex</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+            
         </tr>
     	<tr class="even">
         	<td><input type="checkbox" name="" /></td>
@@ -113,9 +85,7 @@
             <td>745$</td>
             <td>10/04/2011</td>
             <td>web design</td>
-            <td>Alex</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+            
         </tr>
     	<tr class="odd">
         	<td><input type="checkbox" name="" /></td>
@@ -124,9 +94,7 @@
             <td>45$</td>
             <td>10/04/2011</td>
             <td>web design</td>
-            <td>John</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+            
         </tr>
     	<tr class="even">
         	<td><input type="checkbox" name="" /></td>
@@ -135,9 +103,7 @@
             <td>45$</td>
             <td>10/04/2011</td>
             <td>web design</td>
-            <td>Doe</td>
-            <td><a href="#"><img src="images/edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#"><img src="images/trash.gif" alt="" title="" border="0" /></a></td>
+            
         </tr>
   
         
@@ -278,7 +244,18 @@ Panelo - Free Admin Template by <a href="htpp://csstemplatesmarket.com" target="
 </div>
 
 </div>
-
-    	
+<script src="/resources/js/jquery.min.js"></script>
+<script src="/resources/js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+$(function() {
+$('#tabsmenu').tabify();
+$(".toggle_container").hide(); 
+$(".trigger").click(function(){
+	$(this).toggleClass("active").next().slideToggle("slow");
+	return false;
+});
+});
+</script>
 </body>
 </html>

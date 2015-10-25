@@ -44,7 +44,7 @@ public class InicioController {
 		String resultado = this.clienteService.acceso(obj);
 		System.out.println(resultado);
 		if(resultado.equals("Existe")){
-			return "operacion";
+			return "redirect:/bancaenlinea/incio";
 		}
 		else{
 			return "redirect:/bancaenlinea";

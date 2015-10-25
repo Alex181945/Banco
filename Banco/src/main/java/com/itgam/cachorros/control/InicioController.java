@@ -1,6 +1,7 @@
 package com.itgam.cachorros.control;
 
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Locale;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.itgam.cachorros.modelo.Cliente;
 import com.itgam.cachorros.service.ClienteService;
+import com.itgam.cachorros.service.TransaccionService;
 
 /**
  * Handles requests for the application home page.
@@ -21,6 +23,12 @@ public class InicioController {
 	
 	@Autowired
 	private ClienteService clienteService;
+	
+	@Autowired
+	private TransaccionService transaccionService;
+	
+	
+
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -38,21 +46,18 @@ public class InicioController {
 	}
 	
 	@RequestMapping(value = "/bancaenlinea/login", method = RequestMethod.POST)
-	public String bancaPost(@ModelAttribute("cliente") Cliente obj) throws SQLException {
+	public String bancaPost(@ModelAttribute("cliente") Cliente obj, Model model) throws SQLException {
 		System.out.println("Entra al post");
 		
-		String resultado = this.clienteService.acceso(obj);
-		System.out.println(resultado);
-		if(resultado.equals("Existe")){
-			return "redirect:/bancaenlinea/incio";
+		Integer resultado = this.clienteService.acceso(obj);
+		
+		if(resultado.equals(0)){
+			return "redirect:/bancaenlinea";
 		}
 		else{
-			return "redirect:/bancaenlinea";
+			model.addAttribute("lista_transaccion", this.transaccionService.list_Transaccion(resultado));
+			return "operacion";
 		}
 	}
 	
-	@RequestMapping(value = "/bancaenlinea/incio", method = RequestMethod.GET)
-	public String inicio(Locale locale, Model model) throws SQLException {
-		return "operacion";
-	}
 }

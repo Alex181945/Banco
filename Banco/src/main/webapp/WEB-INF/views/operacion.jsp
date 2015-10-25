@@ -14,7 +14,7 @@
 	<div class="header">
     <div class="title"><a href="#">Administra tu cuenta</a></div>
     
-    <div class="header_right">Welcome: , <a href="#" class="settings">Configuracion</a> <a href="#" class="logout">Cerrar Sesion</a> </div>
+    <div class="header_right">Bienvenido<a href="#" class="settings">Configuracion</a> <a href="#" class="logout">Cerrar Sesion</a> </div>
     
     <div class="menu">
     <ul>
@@ -52,61 +52,16 @@
         </tr>
     </tfoot>
     <tbody>
-    	<tr class="odd">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Box Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-        </tr>
-    	<tr class="even">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Trial Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>155$</td>
-            <td>12/04/2011</td>
-            <td>web design</td>
-            
-        </tr>
-    	<tr class="odd">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Hosting Pack</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            
-        </tr>
-    	<tr class="even">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Duo Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>745$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            
-        </tr>
-    	<tr class="odd">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Alavasti Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            
-        </tr>
-    	<tr class="even">
-        	<td><input type="checkbox" name="" /></td>
-            <td>Box Software</td>
-            <td>Lorem ipsum dolor sit amet consectetur</td>
-            <td>45$</td>
-            <td>10/04/2011</td>
-            <td>web design</td>
-            
-        </tr>
-  
-        
+    	<c:forEach items="${lista_transaccion}" var="Transaccion">
+					<tr class="odd">
+						<td></td>
+						<td><c:out value="${Transaccion.NumTransaccion}" /></td>
+						<td><c:out value="${Transaccion.iIdCuenta}" /></td>
+						<td><c:out value="${Transaccion.Tipo_Transa}" /></td>
+						<td><c:out value="${Transaccion.Monto}" /></td>
+						<td><c:out value="${Transaccion.Fecha_Transa}" /></td>
+					</tr>
+				</c:forEach>
     </tbody>
 </table>
 

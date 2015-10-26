@@ -33,43 +33,6 @@
  
     <div id="right_wrap">
     <div id="right_content">             
-    <h2>Ultimas Operaciones</h2> 
-                    
-                    
-<table id="rounded-corner">
-    <thead>
-    	<tr>
-        	<th></th>
-            <th>Numero de Transaccion</th>
-            <th>Numero de Cuenta</th>
-            <th>Transaccion</th>
-            <th>Monto</th>
-            <th>Fecha</th>
-        </tr>
-    </thead>
-        <tfoot>
-    	<tr>
-        	<td colspan="12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</td>
-        </tr>
-    </tfoot>
-    <tbody>
-    	<c:forEach items="${lista_transaccion}" var="Transaccion">
-					<tr class="odd">
-						<td></td>
-						<td><c:out value="${Transaccion.numTransaccion}" /></td>
-						<td><c:out value="${Transaccion.iIdCuenta}" /></td>
-						<td><c:out value="${Transaccion.tipoTransa}" /></td>
-						<td><c:out value="${Transaccion.monto}" /></td>
-						<td><c:out value="${Transaccion.fechaTransa}" /></td>
-					</tr>
-				</c:forEach>
-    </tbody>
-</table>
-
-	<div class="form_sub_buttons">
-	<a href="#" class="button green">Edit selected</a>
-    <a href="#" class="button red">Delete selected</a>
-    </div>
     
     <ul id="tabsmenu" class="tabsmenu">
         <li class="active"><a href="#tab1">Form Design Structure</a></li>

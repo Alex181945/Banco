@@ -59,11 +59,16 @@ public class InicioController {
 	}
 	
 	@RequestMapping(value = "/bancaenlinea/inicio", method = RequestMethod.GET)
-	public String bancaGet(@ModelAttribute("cliente") Cliente obj, Model model) throws SQLException {
+	public String bancaGet(Model model) throws SQLException {
 		System.out.println("Entra al get");
 		Date fecha = new Date();
 		model.addAttribute("lista_transaccion", this.transaccionService.list_Transaccion("2015-"+(fecha.getMonth()+1)+"-"+fecha.getDate()));
 		return "operacion";
+	}
+	
+	@RequestMapping(value = "/bancaenlinea/operaciones", method = RequestMethod.GET)
+	public String transaccionGet(Model model) throws SQLException {
+		return "transaccion";
 	}
 	
 }

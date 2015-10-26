@@ -19,7 +19,7 @@
     
     <div class="menu">
     <ul>
-    <li><a href="inicio" class="selected">Inicio</a></li>
+    <li><a href="http://localhost:8080/cachorros/bancaenlinea/inicio" class="selected">Inicio</a></li>
     <li><a href="#">Configuracion</a></li>
     <li><a href="#">Servicios</a></li>
     <li><a href="operaciones">Operaciones</a></li>

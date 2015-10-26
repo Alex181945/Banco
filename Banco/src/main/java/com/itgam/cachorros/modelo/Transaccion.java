@@ -7,6 +7,7 @@ public class Transaccion {
 	private String tipoTransa;
 	private Integer monto;
 	private String fechaTransa;
+	private Integer iIdCuenta2;
 	
 	public Integer getNumTransaccion() {
 		return numTransaccion;
@@ -38,5 +39,12 @@ public class Transaccion {
 	public void setFechaTransa(String fechaTransa) {
 		this.fechaTransa = fechaTransa;
 	}
+	public Integer getiIdCuenta2() {
+		return iIdCuenta2;
+	}
+	public void setiIdCuenta2(Integer iIdCuenta2) {
+		this.iIdCuenta2 = iIdCuenta2;
+	}
+	
 
 }

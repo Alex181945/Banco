@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.itgam.cachorros.modelo.Cliente;
+import com.itgam.cachorros.modelo.Transaccion;
 import com.itgam.cachorros.service.ClienteService;
 import com.itgam.cachorros.service.TransaccionService;
 
@@ -68,6 +69,15 @@ public class InicioController {
 	
 	@RequestMapping(value = "/bancaenlinea/operaciones", method = RequestMethod.GET)
 	public String transaccionGet(Model model) throws SQLException {
+		return "transaccion";
+	}
+	
+	@RequestMapping(value = "/bancaenlinea/operaciones/transfencia", method = RequestMethod.POST)
+	public String transferencia(@ModelAttribute("transaccion") Transaccion obj) throws SQLException {
+		System.out.println(obj.getiIdCuenta());
+		System.out.println(obj.getiIdCuenta2());
+		System.out.println(obj.getMonto());
+		System.out.println(this.transaccionService.transferencia(obj));
 		return "transaccion";
 	}
 	

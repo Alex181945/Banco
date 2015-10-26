@@ -24,4 +24,8 @@ public class TransaccionServiceImp implements TransaccionService {
 	public List<Transaccion> list_Transaccion(Integer iCuenta) throws SQLException{
 		return this.transaccionDao.list_Transaccion(iCuenta);
 	}
+	
+	public String transferencia(Transaccion obj) throws SQLException{
+		return this.transaccionDao.transferencia(obj);
+	}
 }

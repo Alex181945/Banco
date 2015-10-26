@@ -19,7 +19,7 @@
     
     <div class="menu">
     <ul>
-    <li><a href="inicio" class="selected">Inicio</a></li>
+    <li><a href="http://localhost:8080/cachorros/bancaenlinea/inicio" class="selected">Inicio</a></li>
     <li><a href="#">Configuracion</a></li>
     <li><a href="#">Servicios</a></li>
     <li><a href="operaciones">Operaciones</a></li>
@@ -28,48 +28,42 @@
     </div>
     
            
-                    
+                
     <div class="center_content">  
  
     <div id="right_wrap">
     <div id="right_content">             
     
     <ul id="tabsmenu" class="tabsmenu">
-        <li class="active"><a href="#tab1">Form Design Structure</a></li>
-        <li><a href="#tab2">Tab two</a></li>
-        <li><a href="#tab3">Tab three</a></li>
-        <li><a href="#tab4">Tab four</a></li>
+        <li class="active"><a href="#tab1">Transferencia</a></li>
+        <li><a href="#tab2">Contratacion de Servicios</a></li>
+        <li><a href="#tab3">Consulta de Movimientos</a></li>
     </ul>
     <div id="tab1" class="tabcontent">
-        <h3>Tab one title</h3>
+        <h3>Envia dinero a otra cuenta</h3>
+        <form action='<c:url value = "/bancaenlinea/operaciones/transfencia"/>'  method = "post">
         <div class="form">
-            
             <div class="form_row">
-            <label>Name:</label>
-            <input type="text" class="form_input" name="" />
+            <label>Confirma tu numero de cuenta:</label>
+            <input type="text" class="form_input" name="iIdCuenta" />
             </div>
              
             <div class="form_row">
-            <label>Email:</label>
-            <input type="text" class="form_input" name="" />
+            <label>Ingresa la cuenta que recibira la transferencia:</label>
+            <input type="text" class="form_input" name="iIdCuenta2" />
             </div>
             
             <div class="form_row">
-            <label>Subject:</label>
-            <select class="form_select" name="">
-            <option>Select one</option>
-            </select>
+            <label>Ingresa el monto:</label>
+            <input type="text" class="form_input" name="monto" />
             </div>
             
-             <div class="form_row">
-            <label>Message:</label>
-            <textarea class="form_textarea" name=""></textarea>
-            </div>
             <div class="form_row">
-            <input type="submit" class="form_submit" value="Submit" />
+            <input type="submit" class="form_submit" value="Transferir" />
             </div> 
             <div class="clear"></div>
         </div>
+        </form>
     </div>
     <div id="tab2" class="tabcontent">
         <h3>Tab two title</h3>

@@ -17,7 +17,11 @@ public class TransaccionServiceImp implements TransaccionService {
 	@Autowired
 	private TransaccionDao transaccionDao;
 
-	public List<Transaccion> list_Transaccion(Integer iIdCuenta) throws SQLException{
-		return this.transaccionDao.list_Transaccion(iIdCuenta);
+	public List<Transaccion> list_Transaccion(String cFecha) throws SQLException{
+		return this.transaccionDao.list_Transaccion(cFecha);
+	}
+	
+	public List<Transaccion> list_Transaccion(Integer iCuenta) throws SQLException{
+		return this.transaccionDao.list_Transaccion(iCuenta);
 	}
 }

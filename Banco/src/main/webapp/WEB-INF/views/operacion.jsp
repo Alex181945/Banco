@@ -6,6 +6,7 @@
 <title>Mocosoft</title>
 <link href='<c:url value="/resources/css/style1.css"/>' rel="stylesheet" type="text/css"  />
 <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/x-icon" href='<c:url value="/resources/images/bank.ico"/>' />
 
 </head>
 <body>
@@ -55,11 +56,11 @@
     	<c:forEach items="${lista_transaccion}" var="Transaccion">
 					<tr class="odd">
 						<td></td>
-						<td><c:out value="${Transaccion.NumTransaccion}" /></td>
+						<td><c:out value="${Transaccion.numTransaccion}" /></td>
 						<td><c:out value="${Transaccion.iIdCuenta}" /></td>
-						<td><c:out value="${Transaccion.TipoTransa}" /></td>
-						<td><c:out value="${Transaccion.Monto}" /></td>
-						<td><c:out value="${Transaccion.FechaTransa}" /></td>
+						<td><c:out value="${Transaccion.tipoTransa}" /></td>
+						<td><c:out value="${Transaccion.monto}" /></td>
+						<td><c:out value="${Transaccion.fechaTransa}" /></td>
 					</tr>
 				</c:forEach>
     </tbody>

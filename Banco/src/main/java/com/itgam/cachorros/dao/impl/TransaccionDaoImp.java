@@ -16,17 +16,44 @@ import com.itgam.cachorros.util.DBConexion;
 @Repository
 public class TransaccionDaoImp implements TransaccionDao {
 	
-	public List<Transaccion> list_Transaccion(Integer iIdCuenta) throws SQLException{
-		System.out.println(iIdCuenta);
+	public List<Transaccion> list_Transaccion(String cFecha) throws SQLException{
+		System.out.println(cFecha);
 		System.out.println("Estoy en la lista transaccion");
 		DBConexion conexion = new DBConexion();
 		Connection inicio = conexion.GetConnection();
 		
 		Statement consulta = inicio.createStatement();
 		
-		ResultSet res = consulta.executeQuery("SELECT * FROM Transacciones WHERE iIdCuenta = "+iIdCuenta);
+		ResultSet res = consulta.executeQuery("SELECT * FROM Transacciones WHERE FechaTransa = "+"'"+cFecha+"'");
 		List<Transaccion> obj = new ArrayList<Transaccion>();
         while (res.next()) {
+        	System.out.println("Entro");
+        	Transaccion obj_Transaccion = new Transaccion();
+        	
+        	obj_Transaccion.setNumTransaccion(res.getInt("NumTransaccion"));
+        	obj_Transaccion.setiIdCuenta(res.getInt("iIdCuenta"));
+        	obj_Transaccion.setTipoTransa(res.getString("TipoTransa"));
+        	obj_Transaccion.setMonto(res.getInt("Monto"));
+        	obj_Transaccion.setFechaTransa(res.getString("FechaTransa"));
+        	
+        	obj.add(obj_Transaccion);
+        }
+        inicio.close();
+        System.out.println("Salgo del dao");
+        return obj;
+	}
+	
+	public List<Transaccion> list_Transaccion(Integer iCuenta) throws SQLException{
+		
+		DBConexion conexion = new DBConexion();
+		Connection inicio = conexion.GetConnection();
+		
+		Statement consulta = inicio.createStatement();
+		
+		ResultSet res = consulta.executeQuery("SELECT * FROM Transacciones WHERE iIdCuenta = "+iCuenta);
+		List<Transaccion> obj = new ArrayList<Transaccion>();
+        while (res.next()) {
+        	System.out.println("Entro");
         	Transaccion obj_Transaccion = new Transaccion();
         	
         	obj_Transaccion.setNumTransaccion(res.getInt("NumTransaccion"));

@@ -2,17 +2,17 @@ package com.itgam.cachorros.modelo;
 
 public class Transaccion {
 	
-	private Integer NumTransaccion;
+	private Integer numTransaccion;
 	private Integer iIdCuenta;
-	private String TipoTransa;
-	private Integer Monto;
-	private String FechaTransa;
+	private String tipoTransa;
+	private Integer monto;
+	private String fechaTransa;
 	
 	public Integer getNumTransaccion() {
-		return NumTransaccion;
+		return numTransaccion;
 	}
 	public void setNumTransaccion(Integer numTransaccion) {
-		NumTransaccion = numTransaccion;
+		this.numTransaccion = numTransaccion;
 	}
 	public Integer getiIdCuenta() {
 		return iIdCuenta;
@@ -21,22 +21,22 @@ public class Transaccion {
 		this.iIdCuenta = iIdCuenta;
 	}
 	public String getTipoTransa() {
-		return TipoTransa;
+		return tipoTransa;
 	}
 	public void setTipoTransa(String tipoTransa) {
-		TipoTransa = tipoTransa;
+		this.tipoTransa = tipoTransa;
 	}
 	public Integer getMonto() {
-		return Monto;
+		return monto;
 	}
 	public void setMonto(Integer monto) {
-		Monto = monto;
+		this.monto = monto;
 	}
 	public String getFechaTransa() {
-		return FechaTransa;
+		return fechaTransa;
 	}
 	public void setFechaTransa(String fechaTransa) {
-		FechaTransa = fechaTransa;
+		this.fechaTransa = fechaTransa;
 	}
 
 }

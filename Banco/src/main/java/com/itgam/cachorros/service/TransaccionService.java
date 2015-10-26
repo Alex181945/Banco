@@ -8,5 +8,7 @@ import com.itgam.cachorros.modelo.Transaccion;
 
 public interface TransaccionService {
 
-	public List<Transaccion> list_Transaccion(Integer iIdCuenta) throws SQLException;
+	public List<Transaccion> list_Transaccion(String cFecha) throws SQLException;
+	
+	public List<Transaccion> list_Transaccion(Integer iCuenta) throws SQLException;
 }

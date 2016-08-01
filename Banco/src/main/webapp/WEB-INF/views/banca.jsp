@@ -17,7 +17,7 @@
 
   <div id="login-form">
 
-    <h3>Iniciar Sesión Putos</h3>
+    <h3>Iniciar Sesión</h3>
 
     <fieldset>
 
